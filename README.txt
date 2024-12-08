@@ -26,3 +26,20 @@ Visit 1 (first neighbor of 0) → Output: 0, 1
 Visit 4 (next neighbor of 0) → Output: 0, 1, 4
 Visit 2 (next neighbor of 0) → Output: 0, 1, 4, 2
 Visit 3 (neighbor of 2) → Final Output: 0, 1, 4, 2, 3
+
+
+
+Question: 3
+Given a connected undirected graph represented by an adjacency list adj, which is a vector of vectors where each adj[i] represents the list of vertices connected to vertex i. Perform a Depth First Traversal (DFS) starting from vertex 0, visiting vertices from left to right as per the adjacency list, and return a list containing the DFS traversal of the graph.
+Note: Do traverse in the same order as they are in the adjacency list.
+Examples: (Should not use the examples to submit your code. These examples are for your understanding)
+Input: adj = [[2, 3, 1], [0], [0, 4], [0], [2]];
+
+Output: [0, 2, 4, 3, 1]
+Explanation: 
+Visit 0 → Output: 0
+Visit 2 (first neighbor of 0) → Output: 0, 2
+Visit 4 (first neighbor of 2) → Output: 0, 2, 4
+Backtrack to 2 and visit 3 (next neighbor of 0) → Output: 0, 2, 4, 3
+Backtrack to 0 and visit 1 (next neighbor of 0) → Final Output: 0, 2, 4, 3, 1
+
