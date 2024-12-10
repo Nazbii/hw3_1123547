@@ -43,3 +43,22 @@ Visit 4 (first neighbor of 2) → Output: 0, 2, 4
 Backtrack to 2 and visit 3 (next neighbor of 0) → Output: 0, 2, 4, 3
 Backtrack to 0 and visit 1 (next neighbor of 0) → Final Output: 0, 2, 4, 3, 1
 
+
+
+Question: 4
+Given a weighted, undirected, and connected graph with V vertices and E edges, your task is to find the sum of the weights of the edges in the Minimum Spanning Tree (MST) of the graph. The graph is represented by an adjacency list, where each element adj[i] is a vector containing vector of integers. Each vector represents an edge, with the first integer denoting the endpoint of the edge and the second integer denoting the weight of the edge.
+Examples: (Should not use the examples to submit your code. These examples are for your understanding)
+Input:
+V = 4, E = 5
+0 1 1
+0 2 2
+1 2 2
+1 3 3
+2 3 4
+
+Output:
+6
+Explanation:
+The Spanning Tree resulting in a weight of 6 is shown above.
+
+
